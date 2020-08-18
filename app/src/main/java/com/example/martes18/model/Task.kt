@@ -1,4 +1,4 @@
-package com.example.martes18
+package com.example.martes18.model
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

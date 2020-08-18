@@ -1,9 +1,10 @@
-package com.example.martes18
+package com.example.martes18.dataBase
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.martes18.model.Task
 
 
 //añadir nombre y entities, y las TaskDao(une los Daos y las entidades)
@@ -17,8 +18,9 @@ abstract class TaskDataBase: RoomDatabase(){
         @Volatile
         private var INSTANCE: TaskDataBase?= null
 
-        fun getDataBase(context : Context): TaskDataBase{
-            val tempInstance = INSTANCE
+        fun getDataBase(context : Context): TaskDataBase {
+            val tempInstance =
+                INSTANCE
             if(tempInstance != null){
                 return tempInstance
             }

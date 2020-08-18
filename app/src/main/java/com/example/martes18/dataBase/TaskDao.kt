@@ -1,6 +1,7 @@
-package com.example.martes18
+package com.example.martes18.dataBase
 
 import androidx.room.*
+import com.example.martes18.model.Task
 
 // le digo al interfaz peremite conectarnos e interactuar con la base de datos
 @Dao
